@@ -1,0 +1,59 @@
+
+$oleo: 'Oleo Script', cursive;
+.center { text-align: center; }
+.relative { position: relative; display: block; }
+.absolute { position: absolute;}
+.fixed { position: fixed;}
+.fr { float: right; }
+.fl { float: left; }
+.m0 { margin: 0;}
+.m10 { margin: 10px !important;}
+.m20 { margin: 20px !important; }
+.m30 { margin: 30px !important; }
+.s1-3 { font-size: 1.3em; }
+.s9 { font-size: .9em; }
+.s8 {font-size: .8em;}
+.s7 {font-size: .7em;}
+.s6 {font-size: .6em;}
+.s5 {font-size: .5em;}
+.s4 {font-size: .4em;}
+.s3 {font-size: .3em;}
+.s2 {font-size: .2em;}
+.s1 {font-size: .1em;}
+.ml-0 { margin-left: 0px !important;}
+.mt-40 { margin-top: 40px !important;}
+.mauto { margin-left: auto !important; margin-right: auto !important;}
+.p0 { padding: 0 !important; }
+.p10 { padding: 10px !important;}
+.p15 { padding: 15px; }
+.p30 { padding: 30px !important;}
+.pt-250 { padding-top: 250px;}
+.pointer { cursor: pointer; }
+.border-simple { 
+	border: 1px solid #ccc;
+}
+.noclick { pointer-events: none;}
+.inline { display: inline-block; }
+.block { display: block !important; }
+.hidden { display: none !important; }
+.clear { clear: both;}
+.w1 { width: 10%; }
+.w15 { width: 15%; }
+.w2 { width: 20%; }
+.w25 { width: 25%; }
+.w3 { width: 30%; }
+.w35 { width: 35%; }
+.w4 { width: 40%; }
+.w45 { width: 45%; }
+.w5 { width: 50%; }
+.w55 { width: 55%; }
+.w6 { width: 60%; }
+.w65 { width: 65%; }
+.w7 { width: 70%; }
+.w75 { width: 75%; }
+.w8 { width: 80%; }
+.w85 { width: 85%; }
+.w9 { width: 90%; }
+.w95 { width: 94.5%; }
+.w10 { width: 100%; }
+.oleo { font-family: $oleo;}

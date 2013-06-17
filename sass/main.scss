@@ -1,0 +1,236 @@
+@import "../bourbon/bourbon";
+@import "build";
+
+@mixin background-size($c) {
+		background-size: #{$c};
+	-webkit-background-size: #{$c};
+}
+
+$oleo: 'Oleo Script', cursive;
+$burger: #933E3E;
+$purple: #617EE8;
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+body {
+		background: url(../images/truckbg.png);
+//	background: url("../images/radial.jpg");
+	font-family: sans-serif;
+	@include background-size(cover);
+	font-size: 14px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	color: $burger;
+
+	&.long-story { 
+		@include background-size(auto);
+	}
+
+	&.catering {
+		background: url(../images/truckbg.png);
+		@include background-size(cover);
+	}
+}
+
+.burger-being-eaten { 
+	display: block;
+	width: 960px;
+	height: 241px;
+	background: url("../images/mainelysprite.png") no-repeat 0 2px;
+	font-size: 0px;
+	text-indent: -999px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -480px;
+	
+	&.bite1 {background-position: 0px -239px;}
+	&.bite2 {background-position: 0px -480px;}
+	&.bite3 {background-position: 0px -720px;}
+	&.bite4 {background-position: 0px -965px;}
+	&.bite5 {background-position: 0px -1216px;}
+	&.bite6 {background-position: 0px -1462px;}
+
+}
+
+h1 {
+	font-size: 4em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+p {
+	line-height: 1.7;
+	padding: 15px;
+	text-indent: 20px;
+}
+
+a { color: $purple;}
+
+.wrap {
+	display: none;
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+	background: #FFFBED;
+	background: rgba(255,255,255,.8);
+	padding: 10px 25px;
+//	@include box-shadow(0px 0px 6px #aaa);
+
+	&.main-page {
+		background: url("../images/test.png") no-repeat 50% 0%;
+		height: 700px;
+		display: block;
+		z-index: -10;
+		@include animation(slide 1.2s linear);
+		h1 { 
+			color: #fff;
+			text-align: center;
+			text-shadow: 0px 2px 0px #000;
+			padding-top: 200px;
+			width: 800px;
+			display: block;
+			margin: auto;
+		}
+	}
+}
+
+.menu {
+
+	h2 {
+		font-family:$oleo;
+		font-size: 1.8em;
+		border-bottom: 1px solid $burger;
+		margin-bottom: 10px;
+	}
+
+	dt {
+		padding: 5px 7px;
+		font-size: 1.1em;
+		text-decoration: underline;
+	}
+
+	dd {
+		text-indent: 2em;
+		padding: 5px 0;
+	}
+}
+
+@-moz-keyframes slide {
+	from {
+		margin-top: -1111px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+@keyframes slide {
+	from {
+		margin-top: -1111px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+@-webkit-keyframes slide {
+	from {
+		margin-top: -1111px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+nav {
+	display: block;
+	background: rgb(255,252,244); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,252,244,1) 0%, rgba(242,221,116,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,252,244,1)), color-stop(100%,rgba(242,221,116,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcf4', endColorstr='#f2dd74',GradientType=0 ); /* IE6-9 */
+	border-top: 1px solid #Fff;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	@include box-shadow(0px 1px 3px #666);
+	z-index: 11;
+
+	&:after {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: url("../images/bedge_grunge.png");
+		opacity: .4;
+		-moz-opacity: .4;
+		-webkit-opacity: .4;
+		-ms-opacity: .4;
+		-o-opacity: .4;
+		z-index: -111;
+	}
+
+	
+	ul {
+		display: block;
+		width: 960px;
+		margin: 0 auto;
+		
+
+		li {
+			display: inline-block;
+			padding: 0px 7px;
+			padding: 7px 0;
+			line-height: 40px;
+			text-shadow: 0px 1px 0px #fff;
+			width: 16%;
+
+			a {
+				text-align: center;
+				@include transition(color .2s ease-in-out);
+				display: block;
+				@include border-radius(4px);
+				height: 40px;
+				padding: 0 10px;
+				font-family: $oleo;
+				font-size: 1.5em;
+				text-decoration: none;
+				color: $burger;
+				width: 100%;
+
+				&:hover, &.selected {
+					@include box-shadow(inset 0px 1px 3px #aaa);
+					border-bottom: 1px solid #fff;
+					color: $purple;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+input, textarea {
+	display: block;
+	outline: none;
+	margin: 10px;
+	border: none;
+	width: 50%;
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+}
+
+textarea {
+	width: 70%;
+	min-height: 200px;
+	max-width: 100%;
+}
+
+#footer { text-shadow: 0px -1px 0px #313131}

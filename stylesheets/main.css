@@ -1,0 +1,377 @@
+.center {
+  text-align: center; }
+
+.relative {
+  position: relative;
+  display: block; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.m0 {
+  margin: 0; }
+
+.m10 {
+  margin: 10px !important; }
+
+.m20 {
+  margin: 20px !important; }
+
+.m30 {
+  margin: 30px !important; }
+
+.s1-3 {
+  font-size: 1.3em; }
+
+.s9 {
+  font-size: .9em; }
+
+.s8 {
+  font-size: .8em; }
+
+.s7 {
+  font-size: .7em; }
+
+.s6 {
+  font-size: .6em; }
+
+.s5 {
+  font-size: .5em; }
+
+.s4 {
+  font-size: .4em; }
+
+.s3 {
+  font-size: .3em; }
+
+.s2 {
+  font-size: .2em; }
+
+.s1 {
+  font-size: .1em; }
+
+.ml-0 {
+  margin-left: 0px !important; }
+
+.mt-40 {
+  margin-top: 40px !important; }
+
+.mauto {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.p0 {
+  padding: 0 !important; }
+
+.p10 {
+  padding: 10px !important; }
+
+.p15 {
+  padding: 15px; }
+
+.p30 {
+  padding: 30px !important; }
+
+.pt-250 {
+  padding-top: 250px; }
+
+.pointer {
+  cursor: pointer; }
+
+.border-simple {
+  border: 1px solid #ccc; }
+
+.noclick {
+  pointer-events: none; }
+
+.inline {
+  display: inline-block; }
+
+.block {
+  display: block !important; }
+
+.hidden {
+  display: none !important; }
+
+.clear {
+  clear: both; }
+
+.w1 {
+  width: 10%; }
+
+.w15 {
+  width: 15%; }
+
+.w2 {
+  width: 20%; }
+
+.w25 {
+  width: 25%; }
+
+.w3 {
+  width: 30%; }
+
+.w35 {
+  width: 35%; }
+
+.w4 {
+  width: 40%; }
+
+.w45 {
+  width: 45%; }
+
+.w5 {
+  width: 50%; }
+
+.w55 {
+  width: 55%; }
+
+.w6 {
+  width: 60%; }
+
+.w65 {
+  width: 65%; }
+
+.w7 {
+  width: 70%; }
+
+.w75 {
+  width: 75%; }
+
+.w8 {
+  width: 80%; }
+
+.w85 {
+  width: 85%; }
+
+.w9 {
+  width: 90%; }
+
+.w95 {
+  width: 94.5%; }
+
+.w10 {
+  width: 100%; }
+
+.oleo {
+  font-family: "Oleo Script", cursive; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: url(../images/truckbg.png);
+  font-family: sans-serif;
+  background-size: cover;
+  -webkit-background-size: cover;
+  font-size: 14px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #933e3e; }
+  body.long-story {
+    background-size: auto;
+    -webkit-background-size: auto; }
+  body.catering {
+    background: url(../images/truckbg.png);
+    background-size: cover;
+    -webkit-background-size: cover; }
+
+.burger-being-eaten {
+  display: block;
+  width: 960px;
+  height: 241px;
+  background: url("../images/mainelysprite.png") no-repeat 0 2px;
+  font-size: 0px;
+  text-indent: -999px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px; }
+  .burger-being-eaten.bite1 {
+    background-position: 0px -239px; }
+  .burger-being-eaten.bite2 {
+    background-position: 0px -480px; }
+  .burger-being-eaten.bite3 {
+    background-position: 0px -720px; }
+  .burger-being-eaten.bite4 {
+    background-position: 0px -965px; }
+  .burger-being-eaten.bite5 {
+    background-position: 0px -1216px; }
+  .burger-being-eaten.bite6 {
+    background-position: 0px -1462px; }
+
+h1 {
+  font-size: 4em;
+  font-family: 'PT Sans', sans-serif; }
+
+p {
+  line-height: 1.7;
+  padding: 15px;
+  text-indent: 20px; }
+
+a {
+  color: #617ee8; }
+
+.wrap {
+  display: none;
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+  background: #FFFBED;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 25px; }
+  .wrap.main-page {
+    background: url("../images/test.png") no-repeat 50% 0%;
+    height: 700px;
+    display: block;
+    z-index: -10;
+    -webkit-animation: slide 1.2s linear;
+    -moz-animation: slide 1.2s linear;
+    animation: slide 1.2s linear; }
+    .wrap.main-page h1 {
+      color: #fff;
+      text-align: center;
+      text-shadow: 0px 2px 0px #000;
+      padding-top: 200px;
+      width: 800px;
+      display: block;
+      margin: auto; }
+
+.menu h2 {
+  font-family: "Oleo Script", cursive;
+  font-size: 1.8em;
+  border-bottom: 1px solid #933e3e;
+  margin-bottom: 10px; }
+.menu dt {
+  padding: 5px 7px;
+  font-size: 1.1em;
+  text-decoration: underline; }
+.menu dd {
+  text-indent: 2em;
+  padding: 5px 0; }
+
+@-moz-keyframes slide {
+  from {
+    margin-top: -1111px; }
+
+  to {
+    margin-top: 0; } }
+
+@keyframes slide {
+  from {
+    margin-top: -1111px; }
+
+  to {
+    margin-top: 0; } }
+
+@-webkit-keyframes slide {
+  from {
+    margin-top: -1111px; }
+
+  to {
+    margin-top: 0; } }
+
+nav {
+  display: block;
+  background: #fffcf4;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffcf4), color-stop(100%, #f2dd74));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  /* IE10+ */
+  background: linear, to bottom, #fffcf4 0%, #f2dd74 100%;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf4', endColorstr='#f2dd74',GradientType=0 );
+  /* IE6-9 */
+  border-top: 1px solid #Fff;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  z-index: 11; }
+  nav:after {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../images/bedge_grunge.png");
+    opacity: .4;
+    -moz-opacity: .4;
+    -webkit-opacity: .4;
+    -ms-opacity: .4;
+    -o-opacity: .4;
+    z-index: -111; }
+  nav ul {
+    display: block;
+    width: 960px;
+    margin: 0 auto; }
+    nav ul li {
+      display: inline-block;
+      padding: 0px 7px;
+      padding: 7px 0;
+      line-height: 40px;
+      text-shadow: 0px 1px 0px #fff;
+      width: 16%; }
+      nav ul li a {
+        text-align: center;
+        -webkit-transition: color 0.2s ease-in-out;
+        -moz-transition: color 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out;
+        -o-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+        display: block;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        height: 40px;
+        padding: 0 10px;
+        font-family: "Oleo Script", cursive;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: #933e3e;
+        width: 100%; }
+        nav ul li a:hover, nav ul li a.selected {
+          -webkit-box-shadow: inset 0px 1px 3px #aaaaaa;
+          box-shadow: inset 0px 1px 3px #aaaaaa;
+          border-bottom: 1px solid #fff;
+          color: #617ee8;
+          text-decoration: underline; }
+
+input, textarea {
+  display: block;
+  outline: none;
+  margin: 10px;
+  border: none;
+  width: 50%;
+  padding: 8px 10px;
+  border: 1px solid #ddd; }
+
+textarea {
+  width: 70%;
+  min-height: 200px;
+  max-width: 100%; }
+
+#footer {
+  text-shadow: 0px -1px 0px #313131; }
