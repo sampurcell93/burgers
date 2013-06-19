@@ -1,4 +1,4 @@
-		<div class="wrap menu" id='menu'>
+		<div class="wrap" id='menu'>
 			<p class="center"><a href='menu.pdf'>Download our menu as a pdf instead!</a></p>
 			<div class="fl w45 p10">
 				<h2>Specials - Burgers</h2>

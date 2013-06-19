@@ -7,7 +7,7 @@
 }
 
 $oleo: 'Oleo Script', cursive;
-$burger: #933E3E;
+$burger: #603008;
 $purple: #617EE8;
 
 * {
@@ -17,23 +17,35 @@ $purple: #617EE8;
 }
 
 body {
-		background: url(../images/truckbg.png);
+	background: url(../images/avocado.jpg);
 //	background: url("../images/radial.jpg");
 	font-family: sans-serif;
-	@include background-size(cover);
+	@include background-size(cover !important);
+//	@include transition(all 1.6s linear);
 	font-size: 14px;
 	padding-top: 60px;
 	padding-bottom: 30px;
 	color: $burger;
 
-	&.long-story { 
-		@include background-size(auto);
-	}
-
 	&.catering {
 		background: url(../images/truckbg.png);
-		@include background-size(cover);
 	}
+	&.menu {
+		background: url(../images/menu.jpg);
+	}
+	&.story {
+		background: url(../images/dudes.jpg);
+	}
+	&.catering { 
+		background: url(../images/egg.jpg);
+	}
+}
+
+#preloader {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	background: url(../images/dudes.jpg), url(../images/menu.jpg), url(../images/truckbg.png), url(../images/avocado.jpg), url(../images/egg.jpg), url(../images/dudes.jpg);
 }
 
 .burger-being-eaten { 
@@ -59,7 +71,7 @@ body {
 
 h1 {
 	font-size: 4em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -76,21 +88,20 @@ a { color: $purple;}
 	width: 960px;
 	position: relative;
 	background: #FFFBED;
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.67);
 	padding: 10px 25px;
 //	@include box-shadow(0px 0px 6px #aaa);
 
 	&.main-page {
-		background: url("../images/test.png") no-repeat 50% 0%;
-		height: 700px;
+		background: url("../images/logo_big.png") no-repeat 50% 200px rgba(255,255,255,.5);
+		height: 660px;
 		display: block;
 		z-index: -10;
 		@include animation(slide 1.2s linear);
 		h1 { 
-			color: #fff;
+			color: $burger;
 			text-align: center;
-			text-shadow: 0px 2px 0px #000;
-			padding-top: 200px;
+			padding-top: 0px;
 			width: 800px;
 			display: block;
 			margin: auto;
@@ -98,25 +109,23 @@ a { color: $purple;}
 	}
 }
 
-.menu {
-
+#menu {
 	h2 {
 		font-family:$oleo;
 		font-size: 1.8em;
 		border-bottom: 1px solid $burger;
 		margin-bottom: 10px;
 	}
-
-	dt {
+}
+dt {
 		padding: 5px 7px;
 		font-size: 1.1em;
 		text-decoration: underline;
-	}
+}
 
-	dd {
-		text-indent: 2em;
-		padding: 5px 0;
-	}
+dd {
+	text-indent: 2em;
+	padding: 5px 0;
 }
 
 @-moz-keyframes slide {
@@ -147,36 +156,37 @@ a { color: $purple;}
 nav {
 	display: block;
 	background: rgb(255,252,244); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(255,252,244,1) 0%, rgba(242,221,116,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,252,244,1)), color-stop(100%,rgba(242,221,116,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,252,244,1) 0%,rgba(242,221,116,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcf4', endColorstr='#f2dd74',GradientType=0 ); /* IE6-9 */
-	border-top: 1px solid #Fff;
+background: -moz-linear-gradient(top,  rgba(255,252,244,1) 0%, rgba(252,239,169,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,252,244,1)), color-stop(100%,rgba(252,239,169,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(252,239,169,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(252,239,169,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,252,244,1) 0%,rgba(252,239,169,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,252,244,1) 0%,rgba(252,239,169,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcf4', endColorstr='#fcefa9',GradientType=0 ); /* IE6-9 */
+
 	top: 0;
 	width: 100%;
 	position: fixed;
 	@include box-shadow(0px 1px 3px #666);
 	z-index: 11;
 
-	&:after {
-		pointer-events: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		background: url("../images/bedge_grunge.png");
-		opacity: .4;
-		-moz-opacity: .4;
-		-webkit-opacity: .4;
-		-ms-opacity: .4;
-		-o-opacity: .4;
-		z-index: -111;
-	}
+
+//&:after {
+//	pointer-events: none;
+//	position: absolute;
+//	top: 0;
+//	left: 0;
+//	width: 100%;
+//	height: 100%;
+//	content: "";
+//	background: url("../images/bedge_grunge.png");
+//	opacity: .4;
+//	-moz-opacity: .4;
+//	-webkit-opacity: .4;
+//	-ms-opacity: .4;
+//	-o-opacity: .4;
+//	z-index: -111;
+//}
 
 	
 	ul {
@@ -190,13 +200,14 @@ nav {
 			padding: 0px 7px;
 			padding: 7px 0;
 			line-height: 40px;
-			text-shadow: 0px 1px 0px #fff;
 			width: 16%;
 
 			a {
 				text-align: center;
 				@include transition(color .2s ease-in-out);
 				display: block;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
 				@include border-radius(4px);
 				height: 40px;
 				padding: 0 10px;
@@ -207,10 +218,9 @@ nav {
 				width: 100%;
 
 				&:hover, &.selected {
-					@include box-shadow(inset 0px 1px 3px #aaa);
-					border-bottom: 1px solid #fff;
-					color: $purple;
 					text-decoration: underline;
+					border-left: 1px solid $burger;
+					border-right: 1px solid $burger;
 				}
 			}
 		}
@@ -233,4 +243,33 @@ textarea {
 	max-width: 100%;
 }
 
-#footer { text-shadow: 0px -1px 0px #313131}
+#footer { text-shadow: 0px -1px 0px #313131; color: #eee;}
+
+#findus {
+	left: 50%;
+	bottom: 0;
+	width: 300px;
+	margin-left: -480px;
+	height: 40px;
+	padding: 10px 25px;
+	overflow: hidden;
+	@include transition(all 1s ease-in-out);
+	@include box-shadow(0px 0px 4px $burger);
+	@include border-radius(3px 3px 0 0);
+	background: rgba(255,255,255,.8);
+	cursor: pointer;
+
+	&:hover h2 { text-decoration: underline; }
+
+	&.expanded {
+		height: auto;
+	}
+}
+
+button {
+	display: block;
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+	background: rgba(231,146,78,.9);
+	color: $burger;
+}

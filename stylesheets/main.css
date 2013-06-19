@@ -173,21 +173,28 @@
   box-sizing: border-box; }
 
 body {
-  background: url(../images/truckbg.png);
+  background: url(../images/avocado.jpg);
   font-family: sans-serif;
-  background-size: cover;
-  -webkit-background-size: cover;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
   font-size: 14px;
   padding-top: 60px;
   padding-bottom: 30px;
-  color: #933e3e; }
-  body.long-story {
-    background-size: auto;
-    -webkit-background-size: auto; }
+  color: #603008; }
   body.catering {
-    background: url(../images/truckbg.png);
-    background-size: cover;
-    -webkit-background-size: cover; }
+    background: url(../images/truckbg.png); }
+  body.menu {
+    background: url(../images/menu.jpg); }
+  body.story {
+    background: url(../images/dudes.jpg); }
+  body.catering {
+    background: url(../images/egg.jpg); }
+
+#preloader {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  background: url(../images/dudes.jpg), url(../images/menu.jpg), url(../images/truckbg.png), url(../images/avocado.jpg), url(../images/egg.jpg), url(../images/dudes.jpg); }
 
 .burger-being-eaten {
   display: block;
@@ -215,7 +222,7 @@ body {
 
 h1 {
   font-size: 4em;
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 p {
   line-height: 1.7;
@@ -231,35 +238,36 @@ a {
   width: 960px;
   position: relative;
   background: #FFFBED;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.67);
   padding: 10px 25px; }
   .wrap.main-page {
-    background: url("../images/test.png") no-repeat 50% 0%;
-    height: 700px;
+    background: url("../images/logo_big.png") no-repeat 50% 200px rgba(255, 255, 255, 0.5);
+    height: 660px;
     display: block;
     z-index: -10;
     -webkit-animation: slide 1.2s linear;
     -moz-animation: slide 1.2s linear;
     animation: slide 1.2s linear; }
     .wrap.main-page h1 {
-      color: #fff;
+      color: #603008;
       text-align: center;
-      text-shadow: 0px 2px 0px #000;
-      padding-top: 200px;
+      padding-top: 0px;
       width: 800px;
       display: block;
       margin: auto; }
 
-.menu h2 {
+#menu h2 {
   font-family: "Oleo Script", cursive;
   font-size: 1.8em;
-  border-bottom: 1px solid #933e3e;
+  border-bottom: 1px solid #603008;
   margin-bottom: 10px; }
-.menu dt {
+
+dt {
   padding: 5px 7px;
   font-size: 1.1em;
   text-decoration: underline; }
-.menu dd {
+
+dd {
   text-indent: 2em;
   padding: 5px 0; }
 
@@ -288,42 +296,26 @@ nav {
   display: block;
   background: #fffcf4;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  background: -moz-linear-gradient(top, #fffcf4 0%, #fcefa9 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffcf4), color-stop(100%, #f2dd74));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffcf4), color-stop(100%, #fcefa9));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  background: -webkit-linear-gradient(top, #fffcf4 0%, #fcefa9 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  background: -o-linear-gradient(top, #fffcf4 0%, #fcefa9 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #fffcf4 0%, #f2dd74 100%);
+  background: -ms-linear-gradient(top, #fffcf4 0%, #fcefa9 100%);
   /* IE10+ */
-  background: linear, to bottom, #fffcf4 0%, #f2dd74 100%;
+  background: linear, to bottom, #fffcf4 0%, #fcefa9 100%;
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf4', endColorstr='#f2dd74',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf4', endColorstr='#fcefa9',GradientType=0 );
   /* IE6-9 */
-  border-top: 1px solid #Fff;
   top: 0;
   width: 100%;
   position: fixed;
   -webkit-box-shadow: 0px 1px 3px #666666;
   box-shadow: 0px 1px 3px #666666;
   z-index: 11; }
-  nav:after {
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background: url("../images/bedge_grunge.png");
-    opacity: .4;
-    -moz-opacity: .4;
-    -webkit-opacity: .4;
-    -ms-opacity: .4;
-    -o-opacity: .4;
-    z-index: -111; }
   nav ul {
     display: block;
     width: 960px;
@@ -333,7 +325,6 @@ nav {
       padding: 0px 7px;
       padding: 7px 0;
       line-height: 40px;
-      text-shadow: 0px 1px 0px #fff;
       width: 16%; }
       nav ul li a {
         text-align: center;
@@ -343,6 +334,8 @@ nav {
         -o-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out;
         display: block;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
         -webkit-border-radius: 4px;
         border-radius: 4px;
         height: 40px;
@@ -350,14 +343,12 @@ nav {
         font-family: "Oleo Script", cursive;
         font-size: 1.5em;
         text-decoration: none;
-        color: #933e3e;
+        color: #603008;
         width: 100%; }
         nav ul li a:hover, nav ul li a.selected {
-          -webkit-box-shadow: inset 0px 1px 3px #aaaaaa;
-          box-shadow: inset 0px 1px 3px #aaaaaa;
-          border-bottom: 1px solid #fff;
-          color: #617ee8;
-          text-decoration: underline; }
+          text-decoration: underline;
+          border-left: 1px solid #603008;
+          border-right: 1px solid #603008; }
 
 input, textarea {
   display: block;
@@ -374,4 +365,36 @@ textarea {
   max-width: 100%; }
 
 #footer {
-  text-shadow: 0px -1px 0px #313131; }
+  text-shadow: 0px -1px 0px #313131;
+  color: #eee; }
+
+#findus {
+  left: 50%;
+  bottom: 0;
+  width: 300px;
+  margin-left: -480px;
+  height: 40px;
+  padding: 10px 25px;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0px 0px 4px #603008;
+  box-shadow: 0px 0px 4px #603008;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer; }
+  #findus:hover h2 {
+    text-decoration: underline; }
+  #findus.expanded {
+    height: auto; }
+
+button {
+  display: block;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  background: rgba(231, 146, 78, 0.9);
+  color: #603008; }

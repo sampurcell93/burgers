@@ -1,6 +1,13 @@
 $(document).ready(function() {
 	if (window.location.hash != "")
 		showPage(window.location.hash)
+
+	$("#findus").on("click", function() {
+		$(this).toggleClass("expanded");
+	})
+	$("[rel=#findus]").on("click", function() {
+		$("#findus").toggleClass("expanded");
+	})
 });
 var bites = [
 	{lo: 6   , hi: 150},
@@ -12,12 +19,12 @@ var bites = [
 	{lo: 901, hi: 12000}
 ]
 $(window).scroll(function() {
-	var pos = $(document).scrollTop();
-	for (var i in bites){
-		var bite = bites[i];
-		if (pos >= bite.lo && pos <= bite.hi)
-			$("h1").removeClass().addClass("bite" + i);
-	}
+	// var pos = $(document).scrollTop();
+	// for (var i in bites){
+	// 	var bite = bites[i];
+	// 	if (pos >= bite.lo && pos <= bite.hi)
+	// 		$("h1").removeClass().addClass("bite" + i);
+	// }
 	// var sides = $("#sides-menu");
 	// if (sides.length && pos >= sides.offset().top)
 	// 	sides.addClass("fixed").removeClass("fr w35");
@@ -30,4 +37,5 @@ function showPage(id) {
 	$(".wrap").fadeOut(100);
 	$(id).fadeIn(200);
 	$("nav").find("[href=" + id + "]").addClass("selected").parent().siblings().children().removeClass("selected");
+	$("body").removeClass().addClass(id.toString().substring(1))
 }
