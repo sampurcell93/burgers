@@ -11,12 +11,13 @@
 	<body>
 		<nav>
 			<ul>
+				<li class='logo'></li>
 				<li><a class='selected' href="#home">Home</a></li>
 				<li><a href="#menu">Menu</a></li>
 				<li><a href="#story">Our Story</a></li>
 				<li><a href="#catering">Catering</a></li>
 				<li><a href="#press">Press</a></li>
-				<li><a rel="#findus" class='pointer'>Find Us</a></li>
+				<li><a href="#findus">Find Us</a></li>
 			</ul>
 		</nav>
 
