@@ -1,6 +1,6 @@
 <?php  require_once("./header.php") ;?>
 	<div class="wrap" id="story">
-		<h1 class="center">Living the Dream.</h1>
+		<h1 class="center">Our Story.</h1>
 		<div class="p10 fl w5">
 			<p>Mainely Burgers opened its windows in the summer of 2012, just as we - owners Jack Barber and Ben Berman - had finished our freshman year of college. The idea for the business began when we arrived at school in Boston earlier that year, fresh off graduation from Cape Elizabeth High School. Best friends since first grade, we were always connected by our love of food and in Boston we would meet up at different food trucks to catch up. We realized that Portland was missing out on this trend and that the city could benefit from the creativity, accessibility, and
 			excitement of food trucks.</p>

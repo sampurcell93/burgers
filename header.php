@@ -18,6 +18,8 @@
 				<li><a href="#catering">Catering</a></li>
 				<li><a href="#press">Press</a></li>
 				<li><a href="#findus">Find Us</a></li>
+				<li class="social-media"><a href='http://www.twitter.com/mainelyburgers'>The Twitter Feed for Mainely Burgers</a></li>
+				<li class="social-media fb"><a href='https://www.facebook.com/MainelyBurgers'>The Facebook Page of Mainely Burgers</a></li>
 			</ul>
 		</nav>
 

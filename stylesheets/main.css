@@ -181,20 +181,22 @@ body {
   padding-top: 60px;
   padding-bottom: 30px;
   color: #603008; }
-  body #footer {
+  body.home #footer {
     display: none; }
   body.menu {
-    background: url(../images/avocado.jpg); }
+    background: url(../images/onions.jpg); }
   body.story {
     background: url(../images/dudes.jpg); }
   body.catering {
     background: url(../images/egg.jpg); }
+  body.findus {
+    background: url(../images/bg2.jpg); }
 
 #preloader {
   height: 0;
   width: 0;
   overflow: hidden;
-  background: url(../images/maintruck.jpg), url(../images/gourmet.jpg), url(../images/truckbg.png), url(../images/avocado.jpg), url(../images/egg.jpg), url(../images/dudes.jpg); }
+  background: url(../images/maintruck.jpg), url(../images/gourmet.jpg), url(../images/truckbg.png), url(../images/onions.jpg), url(../images/egg.jpg), url(../images/dudes.jpg); }
 
 h1 {
   font-size: 4em;
@@ -260,7 +262,6 @@ address, .nice-dialog {
     width: 100%; }
 
 #menu h2 {
-  font-family: "Oleo Script", cursive;
   font-size: 1.8em;
   border-bottom: 1px solid #603008;
   margin-bottom: 10px; }
@@ -325,7 +326,7 @@ nav {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    padding-left: 60px;
+    padding-left: 160px !important;
     height: 70px; }
     nav ul:before {
       content: '';
@@ -338,11 +339,27 @@ nav {
       display: block;
       position: absolute;
       left: 0px; }
+    nav ul li.social-media {
+      margin-left: 10px;
+      width: 54px;
+      height: 52px;
+      background: url(../images/twitter.png) 0 -54px no-repeat;
+      text-indent: -999px;
+      overflow: hidden; }
+      nav ul li.social-media a:hover {
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      nav ul li.social-media:hover {
+        background-position: 0px -2px; }
+      nav ul li.social-media.fb {
+        background: url(../images/FB.png) 0 -54px no-repeat; }
+        nav ul li.social-media.fb:hover {
+          background-position: 0px -2px; }
     nav ul li {
       display: inline-block;
       padding: 7px 0;
       line-height: 37px;
-      min-width: 12.5%;
       margin-top: 10px; }
       nav ul li a {
         text-align: center;
@@ -440,7 +457,6 @@ textarea {
 
 button, .button {
   display: block;
-  padding: 5px 8px;
   border: none;
   outline: none;
   -webkit-box-shadow: 0px 1px 3px #ddc766, inset 0px 0px 1px white;
@@ -466,7 +482,9 @@ button, .button {
   font-size: 1.2em;
   font-family: 'Open Sans',sans-serif;
   cursor: pointer;
-  padding: 5px 25px;
+  padding: 0px 25px;
+  min-height: 30px;
+  line-height: 30px;
   display: inline-block; }
   button#submit, .button#submit {
     margin: 0 46px 0 0; }
