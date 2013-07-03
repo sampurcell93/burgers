@@ -165,6 +165,13 @@
 .oleo {
   font-family: "Oleo Script", cursive; }
 
+@font-face {
+  font-family: 'copasetic';
+  src: url("../copacetic/copasetic.regular-webfont.eot");
+  src: url("../copacetic/copasetic.regular-webfont.eot?#iefix") format("embedded-opentype"), url("../copacetic/copasetic.regular-webfont.woff") format("woff"), url("../copacetic/copasetic.regular-webfont.ttf") format("truetype"), url("../copacetic/copasetic.regular-webfont.svg#copasetic_nfregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   margin: 0;
   padding: 0;
@@ -198,10 +205,16 @@ body {
   overflow: hidden;
   background: url(../images/maintruck.jpg), url(../images/gourmet.jpg), url(../images/truckbg.png), url(../images/onions.jpg), url(../images/egg.jpg), url(../images/dudes.jpg); }
 
+#findus {
+  background: none; }
+
 h1 {
   font-size: 4em;
   color: #603008;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'copasetic';
+  padding: 10px; }
+  h1 span.o {
+    font-family: 'Open Sans', sans-serif; }
 
 p {
   line-height: 1.7;
@@ -401,7 +414,7 @@ nav {
           -webkit-box-shadow: 0px 1px 3px #ddc766, inset 0px 0px 1px white;
           box-shadow: 0px 1px 3px #ddc766, inset 0px 0px 1px white; }
 
-.story-box .head {
+.head {
   text-shadow: 0px 1px 0px #fff;
   background: #fffcf4;
   /* Old browsers */
@@ -425,6 +438,7 @@ nav {
   border-radius: 3px 3px 0 0;
   -webkit-box-shadow: 0px 1px 3px #ddc766, inset 0px 0px 1px white;
   box-shadow: 0px 1px 3px #ddc766, inset 0px 0px 1px white; }
+
 .story-box h2 {
   font-size: 1.7em; }
 .story-box h2, .story-box h3 {

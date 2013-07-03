@@ -9,6 +9,17 @@
 $burger: #603008;
 $purple: #617EE8;
 
+@font-face {
+    font-family: 'copasetic';
+    src: url('../copacetic/copasetic.regular-webfont.eot');
+    src: url('../copacetic/copasetic.regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../copacetic/copasetic.regular-webfont.woff') format('woff'),
+         url('../copacetic/copasetic.regular-webfont.ttf') format('truetype'),
+         url('../copacetic/copasetic.regular-webfont.svg#copasetic_nfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -49,10 +60,15 @@ body {
 	background: url(../images/maintruck.jpg), url(../images/gourmet.jpg), url(../images/truckbg.png), url(../images/onions.jpg), url(../images/egg.jpg), url(../images/dudes.jpg);
 }
 
+#findus { background: none; }
+
 h1 {
 	font-size: 4em;
 	color: $burger;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'copasetic';
+	padding: 10px;
+
+	span.o { font-family: 'Open Sans', sans-serif; }
 }
 
 p {
@@ -111,7 +127,6 @@ address, .nice-dialog {
 
 #menu {
 	h2 {
-
 		font-size: 1.8em;
 		border-bottom: 1px solid $burger;
 		margin-bottom: 10px;
@@ -257,8 +272,7 @@ nav {
 	}
 }
 
-.story-box {
-	.head {
+.head {
 		text-shadow: 0px 1px 0px #fff;
 		background: rgb(255,252,244); /* Old browsers */
 		background: -moz-linear-gradient(top,  rgba(255,252,244,1) 0%, rgba(252,239,169,1) 100%); /* FF3.6+ */
@@ -273,6 +287,9 @@ nav {
 		@include border-radius(3px 3px 0 0);
 		@include box-shadow(0px 1px 3px #DDC766, inset 0px 0px 1px #fff);
 	}
+
+.story-box {
+	
 	h2 { font-size: 1.7em; }
 	h2, h3 {
 		padding: 5px 0;

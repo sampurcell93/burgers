@@ -42,28 +42,28 @@
 			<div class="fr w45 p10" id='sides-menu'>
 				<h2>Burgers</h2>
 					<dl>
-						<dt>El Clasico - 5</dt>
+						<dt>El Clasico</dt>
 						<dd>Choice of cheese with lettuce, tomato, pickles, and house sauce</dd>
-						<dt>Tort&aacute;s - 6</dt>
+						<dt>Tort&aacute;s</dt>
 						<dd>Saut&egrave;ed mushrooms, swiss, lettuce, tomato, and house sauce</dd>
-						<dt>The "Mainah" - 7</dt>
+						<dt>The "Mainah"</dt>
 						<dd>Cheddar cheese, sliced apple, saut&egrave;ed onions, bacon, maple mayo</dd>
-						<dt>The Beast - 7</dt>
+						<dt>The Beast</dt>
 						<dd>Cheddar, saut&egrave;ed onions, bacon, pickles, and bbq sauce <em>Try it between grilled cheese sandwiches (instead of buns!)</em></dd>
 						<!-- <dt>Le Eifel Burger</dt>
 						<dd>Swiss, saut&egrave;ed onions and mushrooms, lettuce, tomato, house sauce, bbq sauce, and an onion ring</dd> -->
 					</dl>
 				<h2>Hot Dogs</h2>
 					<dl>
-						<dt>Fourth of July - 3.50</dt>
+						<dt>Fourth of July</dt>
 						<dd>Pearl, all-beef hot dog with ketchup or mustard on a toasted bun</dd>
-						<dt>The Chicago - 4.50</dt>
+						<dt>The Chicago</dt>
 						<dd>With mustard, relish, saut&egrave;ed onions, tomato, celery salt</dd>
 					</dl>
 				<h2>Sides and Salads</h2>
 				<dl>
-					<dt>French Fries - 3.50</dt>	
-					<dt>Truffle Fries - 4</dt>
+					<dt>French Fries</dt>	
+					<dt>Truffle Frie</dt>
 					<dd>Our fries taken to a whole 'nother level.</dd>
 					
 				</dl>

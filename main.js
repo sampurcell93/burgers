@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	if (window.location.hash != "")
 		showPage(window.location.hash)
+	else
+		showPage("#home")
 
 	$("#findus").on("click", function() {
 		$(this).toggleClass("expanded");
